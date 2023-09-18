@@ -1,7 +1,7 @@
 :root,
 :root::before,
 :root::after {
-   --header-font-size: 1.8rem;
+   --header-font-size: 1.5rem;
    --header-logo-size: calc(var(--header-font-size) * 1.5);
 }
 
@@ -9,6 +9,10 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
 }
 
 .dashboard-layout {
@@ -33,7 +37,7 @@
    gap: 3rem; */
 
    display: grid;
-   grid-template-rows: repeat(3, auto);
+   grid-template-rows: repeat(3, min-content);
    gap: 3rem;
    align-content: start;
 }
@@ -44,8 +48,8 @@
    gap: 1ch; */
 
    display: grid;
-   grid-template-columns: repeat(2, auto);
-   gap: 1ch;
+   grid-template-columns: repeat(2, min-content);
+   gap: 1rem;
    align-items: center;
 }
 
