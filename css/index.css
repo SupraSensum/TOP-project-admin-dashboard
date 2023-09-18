@@ -126,6 +126,8 @@ svg {
 
    display: grid;
    grid-template-rows: min-content 1fr;
+
+   height: 100vh;
 }
 
 .dashboard svg {
@@ -232,7 +234,11 @@ svg {
 
 .content {
    display: grid;
-   grid-template-columns: 3fr 1fr;
+   grid-template: 100% / 3fr 1fr;
+
+   padding: 1rem;
+
+   overflow: auto;
 }
 
 .content .profile-image {
@@ -245,8 +251,15 @@ svg {
    overflow: auto;
 }
 
+.content .news-highlights {
+   display: grid;
+   grid-template-rows: repeat(2, 1fr);
+}
+
 /* DEBUGGING */
 
-.dashboard > .card {
-   border: 2px solid red;
+.content .projects,
+.content .announcements,
+.content .trending {
+   /* border: 3px solid green; */
 }
