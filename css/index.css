@@ -3,6 +3,7 @@
 :root::after {
    --header-font-size: 1.5rem;
    --header-logo-size: calc(var(--header-font-size) * 1.5);
+   --nav-icon-size: 1.3rem;
 }
 
 * {
@@ -88,6 +89,26 @@ body {
 
 .sidebar .header h1 {
    font-size: var(--header-font-size);
+}
+
+.sidebar .general-nav,
+.sidebar .user-config-nav {
+   display: grid;
+   /* grid-auto-flow: row; */
+   grid-auto-rows: 1fr;
+   gap: 1rem;
+}
+
+.sidebar .nav-item {
+   display: grid;
+   grid-template-columns: var(--header-logo-size) min-content;
+   gap: 1rem;
+   align-items: center;
+}
+
+.sidebar .nav-item svg {
+   height: var(--nav-icon-size);
+   width: var(--nav-icon-size);
 }
 
 .dashboard {
