@@ -102,13 +102,15 @@ body {
 .sidebar .nav-item {
    display: grid;
    grid-template-columns: var(--header-logo-size) min-content;
-   gap: 1rem;
-   align-items: center;
+   gap: 1ch;
+   place-items: center;
 }
 
 .sidebar .nav-item svg {
    height: var(--nav-icon-size);
    width: var(--nav-icon-size);
+
+   fill: white;
 }
 
 .dashboard {
@@ -130,5 +132,5 @@ body {
 /* DEBUGGING */
 
 .dashboard-layout .sidebar > * {
-   border: 2px solid red;
+   /* border: 2px solid red; */
 }
