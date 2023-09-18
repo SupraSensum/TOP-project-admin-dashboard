@@ -235,6 +235,16 @@ svg {
    grid-template-columns: 3fr 1fr;
 }
 
+.content .profile-image {
+   background-color: gold;
+}
+
+.content .projects,
+.content .announcements,
+.content .trending {
+   overflow: auto;
+}
+
 /* DEBUGGING */
 
 .dashboard > .card {
