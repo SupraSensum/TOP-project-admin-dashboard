@@ -1,7 +1,7 @@
 :root,
 :root::before,
 :root::after {
-   --header-font-size: 1.5rem;
+   --header-font-size: 1.4rem;
    --header-logo-size: calc(var(--header-font-size) * 1.5);
    --nav-icon-size: 1.2rem;
    --nav-item-font-size: calc(var(--header-font-size) * 0.7)
@@ -62,7 +62,7 @@ body {
    "item-1 item-2"
    "item-1 item-4"
    "item-3 item-4";
-   gap: 5px;
+   gap: 4px;
 
    height: var(--header-logo-size);
    width: var(--header-logo-size);;
