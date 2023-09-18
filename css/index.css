@@ -3,7 +3,8 @@
 :root::after {
    --header-font-size: 1.5rem;
    --header-logo-size: calc(var(--header-font-size) * 1.5);
-   --nav-icon-size: 1.3rem;
+   --nav-icon-size: 1.2rem;
+   --nav-item-font-size: calc(var(--header-font-size) * 0.7)
 }
 
 * {
@@ -104,6 +105,11 @@ body {
    grid-template-columns: var(--header-logo-size) min-content;
    gap: 1ch;
    place-items: center;
+}
+
+.sidebar .nav-item .nav-option-name {
+   font-weight: 700;
+   font-size: var(--nav-item-font-size);
 }
 
 .sidebar .nav-item svg {
