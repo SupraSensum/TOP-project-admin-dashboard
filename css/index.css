@@ -95,7 +95,7 @@ body {
 .sidebar .general-nav,
 .sidebar .user-config-nav {
    display: grid;
-   /* grid-auto-flow: row; */
+   grid-template-columns: min-content;
    grid-auto-rows: 1fr;
    gap: 1rem;
 }
@@ -115,7 +115,7 @@ body {
 .sidebar .nav-item svg {
    height: var(--nav-icon-size);
    width: var(--nav-icon-size);
-
+   
    fill: white;
 }
 
