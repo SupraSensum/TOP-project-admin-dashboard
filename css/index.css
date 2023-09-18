@@ -39,9 +39,14 @@
 }
 
 .sidebar .header {
-   display: flex;
+   /* display: flex;
    align-items: center;
+   gap: 1ch; */
+
+   display: grid;
+   grid-template-columns: repeat(2, auto);
    gap: 1ch;
+   align-items: center;
 }
 
 .sidebar .header .logo {
