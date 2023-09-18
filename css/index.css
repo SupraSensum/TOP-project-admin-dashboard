@@ -1,0 +1,99 @@
+:root,
+:root::before,
+:root::after {
+   --header-font-size: 1.8rem;
+   --header-logo-size: calc(var(--header-font-size) * 1.5);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.dashboard-layout {
+   display: grid;
+   grid-template-columns: minmax(200px, 1fr) 4fr;
+   grid-template-areas: 
+   "sidebar dashboard";
+
+   height: 100vh;
+}
+
+.sidebar {
+   grid-area: sidebar;
+
+   background-color: #1AA3D9;
+   color: white;
+
+   padding: 1rem;
+
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.sidebar .header {
+   display: flex;
+   align-items: center;
+   gap: 1ch;
+}
+
+.sidebar .header .logo {
+   display: grid;
+   grid-template: repeat(3, 1fr) / 1fr 1fr;
+   grid-template-areas: 
+   "item-1 item-2"
+   "item-1 item-4"
+   "item-3 item-4";
+   gap: 5px;
+
+   height: var(--header-logo-size);
+   width: var(--header-logo-size);;
+}
+
+.sidebar .header .logo > div {
+   background-color: white;
+}
+
+.sidebar .header .logo .logo-item-1 {
+   grid-area: item-1;
+}
+
+.sidebar .header .logo .logo-item-2 {
+   grid-area: item-2;
+}
+
+.sidebar .header .logo .logo-item-3 {
+   grid-area: item-3;
+}
+
+.sidebar .header .logo .logo-item-4 {
+   grid-area: item-4;
+}
+
+.sidebar .header h1 {
+   font-size: var(--header-font-size);
+}
+
+.dashboard {
+   grid-area: dashboard;
+}
+
+.header .small-greeting::before {
+   content: "Hi there,";
+}
+
+.header .login-name::before {
+   content: "Morgan Oakley";
+}
+
+.header .handle::before {
+   content: " (@morgan)";
+}
+
+/* DEBUGGING */
+
+.dashboard-layout .sidebar > * {
+   border: 2px solid red;
+}
