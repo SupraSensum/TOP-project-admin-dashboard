@@ -274,13 +274,6 @@ svg {
    background-color: white;
 }
 
-.content .projects .card .description,
-.content .announcements .cards-container .description,
-.content .trending .cards-container .description {
-   overflow: hidden;
-   text-overflow: ellipsis;
-}
-
 .content .category-name {
    font-size: 1.1rem;
    font-weight: 700;
@@ -347,13 +340,23 @@ svg {
    padding: 1rem;
 }
 
+.content .announcements .card {
+   padding: 1ch;
+   display: grid;
+   grid-template-rows: min-content auto;
+}
+
+.content .announcements .card:first-child ~ .card {
+   border-top: 1px solid #636363;
+}
+
 .content .announcements .cards-container .title {
-   font-size: 0.8rem;
+   font-size: 0.75rem;
    font-weight: 900;
 }
 
 .content .announcements .cards-container .description {
-   font-size: 0.7rem;
+   font-size: 0.6rem;
    font-weight: 600;
    color: #636363;
 }
