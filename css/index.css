@@ -251,6 +251,11 @@ svg {
    overflow: auto;
 }
 
+.content .projects .cards-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, min(100px, 1fr));
+}
+
 .content .projects .card {
    display: grid;
    grid-template: min-content 1fr min-content / min-content 1fr;
@@ -258,9 +263,13 @@ svg {
    "vert-deco-bar title"
    "vert-deco-bar descrip"
    "vert-deco-bar buttons";
+   gap: 0 1rem;
+
+   padding-right: 1rem;
 
    border-radius: 0.5rem;
    overflow: hidden;
+   box-shadow: 2px 3px 3px silver;
 }
 
 .content .projects .card .vertical-decoration-bar {
@@ -271,12 +280,22 @@ svg {
 }
 .content .projects .card .title {
    grid-area: title;
+
+   padding-top: 1rem;
+   font-size: 1rem;
+   font-weight: 700;
 }
-.content .projects .card .decriptions {
+.content .projects .card .description {
    grid-area: descrip;
+
+   font-size: 0.8rem;
+   color: #636363;
 }
 .content .projects .card .buttons {
    grid-area: buttons;
+   place-self: start end;
+
+   padding-bottom: 1rem;
 }
 
 .content .news-highlights {
