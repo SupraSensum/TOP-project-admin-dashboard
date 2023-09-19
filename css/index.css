@@ -279,7 +279,6 @@ svg {
 .content .trending .cards-container .description {
    overflow: hidden;
    text-overflow: ellipsis;
-   max-height: 100%;
 }
 
 .content .category-name {
