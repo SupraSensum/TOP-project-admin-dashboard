@@ -298,7 +298,7 @@ svg {
    grid-area: vert-deco-bar;
 
    width: 6px;
-   background-color: gold;
+   background-color: #F2AE2E;
 }
 .content .projects .card .title {
    grid-area: title;
