@@ -272,7 +272,6 @@ svg {
    border-radius: 0.5rem;
    box-shadow: 2px 3px 3px silver;
    background-color: white;
-   overflow: hidden;
 }
 
 .content .category-name {
@@ -299,11 +298,9 @@ svg {
    "vert-deco-bar descrip"
    "vert-deco-bar buttons";
    gap: 0 1rem;
-
+   
    padding-right: 1rem;
-   border-radius: 0.5rem;
-   box-shadow: 2px 3px 3px silver;
-   background-color: white;
+   overflow: hidden;
 }
 
 .content .projects .card .vertical-decoration-bar {
@@ -337,7 +334,11 @@ svg {
 }
 
 .content .announcements .cards-container {
-   
+   display: grid;
+   grid-template: calc(100% / 3) / 1fr;
+   grid-auto-rows: 50px;
+
+   padding: 1rem;
 }
 
 .content .trending {
