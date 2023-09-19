@@ -274,6 +274,14 @@ svg {
    background-color: white;
 }
 
+.content .projects .card .description,
+.content .announcements .cards-container .description,
+.content .trending .cards-container .description {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   max-height: 100%;
+}
+
 .content .category-name {
    font-size: 1.1rem;
    font-weight: 700;
@@ -335,10 +343,20 @@ svg {
 
 .content .announcements .cards-container {
    display: grid;
-   grid-template: calc(100% / 3) / 1fr;
-   grid-auto-rows: 50px;
+   grid-auto-rows: calc(100% / 3);
 
    padding: 1rem;
+}
+
+.content .announcements .cards-container .title {
+   font-size: 0.8rem;
+   font-weight: 900;
+}
+
+.content .announcements .cards-container .description {
+   font-size: 0.7rem;
+   font-weight: 600;
+   color: #636363;
 }
 
 .content .trending {
