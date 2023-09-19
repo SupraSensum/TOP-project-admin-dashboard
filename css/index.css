@@ -266,6 +266,15 @@ svg {
    overflow: auto;
 }
 
+.content .projects .card,
+.content .announcements .cards-container,
+.content .trending .cards-container {
+   border-radius: 0.5rem;
+   box-shadow: 2px 3px 3px silver;
+   background-color: white;
+   overflow: hidden;
+}
+
 .content .category-name {
    font-size: 1.1rem;
    font-weight: 700;
@@ -293,7 +302,6 @@ svg {
 
    padding-right: 1rem;
    border-radius: 0.5rem;
-   overflow: hidden;
    box-shadow: 2px 3px 3px silver;
    background-color: white;
 }
@@ -326,6 +334,10 @@ svg {
 
 .content .announcements {
    grid-area: announcements;
+}
+
+.content .announcements .cards-container {
+   
 }
 
 .content .trending {
