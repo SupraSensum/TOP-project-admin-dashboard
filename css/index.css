@@ -259,15 +259,14 @@ svg {
    "vert-deco-bar descrip"
    "vert-deco-bar buttons";
 
-   border: 1px solid black;
-   border-radius: 8px;
-
+   border-radius: 0.5rem;
+   overflow: hidden;
 }
 
 .content .projects .card .vertical-decoration-bar {
    grid-area: vert-deco-bar;
 
-   width: 5px;
+   width: 6px;
    background-color: gold;
 }
 .content .projects .card .title {
