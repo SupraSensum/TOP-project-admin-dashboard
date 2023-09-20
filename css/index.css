@@ -6,6 +6,7 @@
    --nav-icon-size: 1.2rem;
    --nav-item-font-size: calc(var(--header-font-size) * 0.7);
    --descrip-bio-font-color: #636363;
+   --background-blue: #1AA3D9;
 }
 
 * {
@@ -30,7 +31,7 @@ body {
 .sidebar {
    grid-area: sidebar;
 
-   background-color: #1AA3D9;
+   background-color: var(--background-blue);
    color: white;
 
    padding: 1rem;
@@ -138,7 +139,7 @@ svg {
 
 .dashboard .header {
    display: grid;
-   grid-template: 1fr 1fr / 1fr min-content;
+   grid-template: 1fr 1fr / 1fr 300px;
    gap: 1rem;
    
    padding: 1rem 2rem;
@@ -235,7 +236,19 @@ svg {
 }
 
 .dashboard .media-controls {
-   place-self: center;
+   /* place-self: center; */
+}
+
+.dashboard .media-controls button {
+   flex: 1 0 12ch;
+   appearance: none;
+   padding: 1ch 1rem;
+   border: none;
+   border-radius: 50px;
+   background-color: var(--background-blue);
+   color: white;
+   font-size: 0.8rem;
+   font-weight: 700;
 }
 
 .header .small-greeting::before {
