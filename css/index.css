@@ -239,7 +239,7 @@ svg {
    --row-height: calc(50% - calc(var(--content-padding) / var(--num-rows)));
 
    display: grid;
-   grid-template: repeat(var(--num-rows), var(--row-height)) / 3fr 1fr;
+   grid-template: repeat(var(--num-rows), var(--row-height)) / 3fr minmax(210px, 1fr);
    grid-template-areas: 
    "projects announcements"
    "projects trending";
