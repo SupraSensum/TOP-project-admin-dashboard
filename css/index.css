@@ -236,14 +236,16 @@ svg {
 .content {
    --content-padding: 1rem;
    --num-rows: 2;
-   --row-height: calc(50% - calc(var(--content-padding) / var(--num-rows)));
+   --row-gap: 1.5rem;
+   --col-gap: 1rem;
+   --row-height: calc(50% - calc(var(--row-gap) / var(--num-rows)));
 
    display: grid;
    grid-template: repeat(var(--num-rows), var(--row-height)) / 3fr minmax(230px, 1fr);
    grid-template-areas: 
    "projects announcements"
    "projects trending";
-   gap: 1.5rem 1rem;
+   gap: var(--row-gap) var(--col-gap);
 
    padding: var(--content-padding);
    background-color: #E2E8F0;
