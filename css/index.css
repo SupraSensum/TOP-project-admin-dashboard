@@ -143,6 +143,8 @@ svg {
    gap: 1ch 1rem;
    
    padding: 0 2rem 1rem 2rem;
+   box-shadow: 0 3px 3px silver;
+   z-index: 1;
 }
 
 .dashboard .search-container,
