@@ -348,7 +348,7 @@ svg {
 }
 
 .content .announcements .card:first-child ~ .card {
-   border-top: 1px solid #636363;
+   border-top: 1px solid #D2D2D2;
 }
 
 .content .announcements .cards-container .title {
