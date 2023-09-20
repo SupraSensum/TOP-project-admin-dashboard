@@ -364,6 +364,9 @@ svg {
    place-self: start end;
 
    padding-bottom: 1rem;
+
+   display: flex;
+   gap: 1rem;
 }
 
 .content .announcements {
