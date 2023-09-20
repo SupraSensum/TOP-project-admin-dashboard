@@ -178,6 +178,12 @@ svg {
    background-color: gold;
 }
 
+.dashboard .login-and-notifications .login-name {
+   font-size: 1rem;
+   font-weight: 700;
+   min-width: 12ch;
+}
+
 .dashboard .profile-image {
    border-radius: 50%;
    overflow: hidden;
