@@ -338,7 +338,7 @@ svg {
 .content .announcements .cards-container {
    display: grid;
    grid-auto-rows: calc(100% / 3);
-
+   
    padding: 1rem;
 }
 
@@ -346,6 +346,7 @@ svg {
    padding: 1ch;
    display: grid;
    grid-template-rows: min-content auto;
+   align-content: center;
 }
 
 .content .announcements .card:first-child ~ .card {
