@@ -375,7 +375,7 @@ svg {
 
 .content .announcements .cards-container {
    display: grid;
-   grid-auto-rows: calc(100% / 3);
+   grid-auto-rows: min-content;
    
    padding: 1rem;
 }
@@ -408,13 +408,14 @@ svg {
 
 .content .trending .cards-container {
    display: grid;
-   grid-auto-rows: calc(100% / 4);
+   grid-auto-rows: min-content;
+   gap: 1rem;
    padding: 1rem;
 }
 
 .content .trending .card {
    display: grid;
-   grid-template: repeat(2, 50%) / 1fr 3fr;
+   grid-template: repeat(2, 50%) / auto 1fr;
    grid-template-areas: 
    "profile-image handle"
    "profile-image bio";
