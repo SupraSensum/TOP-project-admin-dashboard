@@ -234,7 +234,6 @@ svg {
 }
 
 .content {
-   --content-padding: 1rem;
    --num-rows: 2;
    --row-gap: 1.5rem;
    --col-gap: 1rem;
@@ -247,7 +246,7 @@ svg {
    "projects trending";
    gap: var(--row-gap) var(--col-gap);
 
-   padding: var(--content-padding);
+   padding: 2rem 2rem 3rem 1rem;
    background-color: #E2E8F0;
 
    overflow: auto;
