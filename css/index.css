@@ -256,11 +256,11 @@ svg {
 }
 
 .header .login-name::before {
-   content: "Morgan Oakley";
+   content: "Samuel L. Jackson";
 }
 
 .header .handle::before {
-   content: " (@morgan)";
+   content: " (@saywhatagain)";
 }
 
 .content {
