@@ -206,7 +206,7 @@ svg {
 }
 
 .dashboard .greeting {
-   place-self: center left;
+   justify-self: left;
 
    display: grid;
    grid-template: 1fr 1fr / min-content 1fr;
@@ -227,12 +227,14 @@ svg {
    grid-area: small-greeting;
    font-size: 0.8rem;
    font-weight: 900;
+   align-self: end;
 }
 
 .dashboard .greeting .login-name {
    grid-area: login-name;
    font-size: 1.2rem;
    font-weight: 900;
+   align-self: start;
 }
 
 .dashboard .media-controls {
