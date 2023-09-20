@@ -133,6 +133,7 @@ svg {
 
 .dashboard svg {
    fill: black;
+   flex: 1 0 auto;
 }
 
 .dashboard .header {
@@ -169,10 +170,6 @@ svg {
    display: flex;
    align-items: center;
    gap: 1.5rem;
-}
-
-.dashboard svg {
-   flex: 1 0 auto;
 }
 
 .dashboard .login-and-notifications .profile-image {
