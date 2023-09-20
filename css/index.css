@@ -357,8 +357,7 @@ svg {
 }
 
 .content .announcements .cards-container .description {
-   font-size: 0.6rem;
-   font-weight: 600;
+   font-size: 0.65rem;
    color: #636363;
    overflow: hidden;
 }
