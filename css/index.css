@@ -135,13 +135,12 @@ svg {
    fill: black;
 }
 
-.dashboard > .header {
+.dashboard .header {
    display: grid;
    grid-template: 1fr 1fr / 1fr min-content;
    gap: 1rem;
-
-   padding-left: 2rem;
-   padding-right: 2rem;
+   
+   padding: 1rem 2rem;
 }
 
 .dashboard .search-container,
